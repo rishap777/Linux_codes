@@ -1,7 +1,7 @@
 /* threads_observe.c creates a five threads.
 ** These threads does nothing just looping in a while.
 ** Hence we can the use ps,Top and other utilities to observer the behavior of
-** the threads by chanhing its attributes.
+** the threads by changing its attributes.
 ** AUTHOR : Rishap Singh
 */
 
