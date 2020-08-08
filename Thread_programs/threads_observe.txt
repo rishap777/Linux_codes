@@ -1,0 +1,16 @@
+Lessons from program "threads_observe.c"
+
+In this file we created threads and passed a parameters 
+as local and from heap .
+
+so the local variable of the main thread was able to access by the other thread as the main thread was not finished.
+Hence the stack of the main thread was able to acces by the other threads by passing appropriate addresses.
+
+*** But it is always a good prctice to make these parameters as global or in the heap space. ***
+
+
+in case of other thread (let say thread2) creating many threads and this thread2 has its own stack space. so again if we make local parameter in thread2 to pass to other threads created in this thread2.
+
+If the thread2 is destroyed ,then any access to the parameter passed to other threads creted by this thread2 will lead to garbage value or may even lead to segmentation fault.
+
+Always try to keep the things in global or in heap.  
